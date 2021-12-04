@@ -1,0 +1,402 @@
+/* ----------------------------General---------------------------- */
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+header
+{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+main
+{
+    background-color: black;
+}
+
+.conteneur_main
+{
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 25%;
+}
+
+footer
+{
+    background-color: rgb(32, 31, 31);
+}
+
+.conteneur_footer
+{
+    margin: 0 25%;
+}
+
+/* ----------------------------Header---------------------------- */
+
+.conteneur_header
+{
+    margin: 0 25%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+
+/* Header partit droite */
+
+.conteneur_img_p
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header img
+{
+    width: 75%;
+}
+
+header span
+{
+    color: orange;
+}
+
+/* Header partit gauche */
+
+.conteneur_p_nav
+{
+    width: 45%;
+}
+
+.conteneur_p_nav p
+{
+    height: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header ul
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav
+{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----------------------------Main---------------------------- */
+
+.img_boxe_head
+{
+    width: 100%;
+}
+
+.section
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 10%;
+}
+
+.conteneur_vente
+{
+    width: 45%;
+    position: relative;
+}
+
+.conteneur_vente-2
+{
+    margin: 5%;
+}
+
+.absolute
+{
+    background-color: black;
+    border-radius: 10px;
+    color: orange;
+    height: 20px;
+    position: absolute;
+    padding: 2% 4%;
+    text-align: center;
+    width: 8%;
+    top: 7%;
+    right: 2%;
+}
+
+figure img
+{
+    width: 100%;
+}
+
+figcaption
+{
+    margin-top: -10%;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 7%;
+    background-color: white;
+}
+
+.flex_prix
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.voir_vente
+{
+    background-color: black;
+    color: white;
+    padding: 1%;
+    width: 40%;
+    text-align: center;
+}
+
+.first_prix
+{
+    padding: 1%;
+    text-decoration: line-through;
+}
+
+.second_prix
+{
+    padding: 1%;
+    color: orange;
+}
+
+/* ----------------------------Footer---------------------------- */
+
+footer nav
+{
+    background-color: white;
+    width: 50%;
+    position: relative;
+    bottom: 15px;
+    left: 25%;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+footer ul
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex_footer
+{
+    display: flex;
+}
+
+.conteneur_icon
+{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+}
+
+.conteneur_icon img
+{
+    width: 25%;
+}
+
+.flex_footer p
+{
+    color: white;
+    text-align: justify;
+    margin-top: 8%;
+}
+
+hr
+{
+    border: 1px solid grey;
+}
+
+.reseau_link
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.link_twitter
+{
+    margin: 0 8%;
+}
+
+.droit
+{
+    color: grey;
+    margin-top: 2%;
+    text-align: center;
+}
+
+@media screen and (max-width:1350px)
+{
+    /* Modification Marge */
+    .conteneur_header
+    {
+        margin: 0 10%;
+    }
+
+    .conteneur_main
+    {
+        margin: 0 10%;
+    }
+
+    .conteneur_footer
+    {
+        margin: 0 10%;
+    }
+}
+
+@media screen and (max-width:1000px)
+{
+    /* Taille block position absolu */
+    /* Sinon déformation */
+    .absolute
+    {
+        width: 9%;
+    }
+}
+
+@media screen and (max-width:800px)
+{
+    /* Modification Marge */
+    .conteneur_header
+    {
+        margin: 0 5%;
+    }
+
+    .conteneur_main
+    {
+        margin: 0 5%;
+    }
+
+    .conteneur_footer
+    {
+        margin: 0 5%;
+    }
+
+    .conteneur_p_nav
+    {
+        width: 60%;
+    }
+
+    /* Taille block position absolu */
+    /* Sinon déformation */
+    .absolute
+    {
+        width: 10%;
+    }
+}
+
+@media all and (max-device-width:650px) /* all et max-device-width pour préparer le format mobile */
+/* Rupture juste avant 576px sinon quelque probleme de largeur */
+{
+    /* Header */
+
+    .conteneur_header
+    {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    header img 
+    {
+        width: 50%;
+        display: block;
+        margin: 5% auto 0 auto;
+    }
+
+    .conteneur_img_p p 
+    {
+        text-align: center;
+        margin-top: 1%;
+    }
+
+    .conteneur_p_nav
+    {
+        width: 100%;
+    }
+
+    .conteneur_p_nav p 
+    {
+        justify-content: flex-start;
+        margin: 5% 0 0 5%;
+    }
+
+    header nav 
+    {
+        width: 85%;
+        justify-content: flex-start;
+        margin: 2% 0 2% 5%;
+    }
+
+    header ul 
+    {
+        justify-content: space-between;
+    }
+
+    /* Main */
+
+    .conteneur_main
+    {
+        margin: 5% 5% 0 5%;
+    }
+
+    .section
+    {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+    .conteneur_vente
+    {
+        width: 100%;
+    }
+
+    /* Footer */
+
+    footer nav 
+    {
+        width: 80%;
+        left: 10%;
+    }
+
+    .flex_footer
+    {
+        flex-wrap: wrap;
+    }
+
+    .conteneur_icon
+    {
+        width: 46%;
+    }
+}
