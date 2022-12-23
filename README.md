@@ -1,2 +1,2 @@
 # WF3_project
-HTML and CSS exam from WF3 school
+HTML/CSS with responsive exam from WF3 school 
